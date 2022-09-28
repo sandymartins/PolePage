@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+/* Shift+Alt+A: Comenta o bloco de código */
+/* Ctrl+Shift+K: Deleta a linha */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-image: url(assets/fundo-degrade.png);
+}
+
+nav{
+    display: flex;
+    background-color: #ae0169;
+    height: 165px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    /* valores: padding-cima + padding-right + padding-baixo + padding-left */
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    font-weight: 600;
+    padding-left: 55px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    /* valores: margin 0px cima e baixo e 5px para esquerda e direita */
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #ae0169;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    /* valores: padding 8px cima e baixo e 5 para esquerda e direita */
+    padding: 8px 15px;
+    border: 6px solid #AE0169;
+    border-radius: 10px;
+    background-color: black;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+
+nav ul li a.active,
+nav ul li a:hover{
+    background-color: white;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;/* para desaparecer */
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 163px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+    
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a{
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover{
+    background: rgb(253, 253, 253);
+    color: black;
+}
+
+}

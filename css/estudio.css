@@ -1,0 +1,23 @@
+#img_texto{
+    display: flex;
+    text-align: center;
+    margin: 5%;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    padding-top: 25px;
+}
+
+@media (max-width: 768px){
+    .imgScorpion{
+        display: inline-block;
+    }
+    #img_texto{
+        display: block;
+    }
+      
+}
