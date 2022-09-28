@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="#" href="index.html">
+    <title>Contato</title>
+</head>
+<body>
+    <main class="contato">
+        <section>
+          <h3 class="margin">Contato</h2>
+          <form>
+            <div class="margin margintop">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Insira o seu nome completo" onkeyup="validaNome()" required>
+                <div id="txtNome"></div>
+              </div>
+        
+              <div class="margin margintop">
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="text" placeholder="Insira o seu e-mail" onkeyup="validaEmail2()" required>
+                <div id="txtEmail"></div>
+              </div>
+
+            
+            
+            <div class="margin margintop">
+              <label for="mensagem">Mensagem:</label>
+            </div>
+
+            <div class="margin margintop">
+                <textarea id="mensagem" rows="8" cols="45" placeholder="Deixe sua mensagem" onkeyup="validaMensagem()"></textarea>
+                <div id="txtMsg"></div>
+            </div>
+            
+            <button class="margin margintop" type="submit" onclick="enviarForm()">Enviar</button>
+          </form>
+        </section>
+        <script src="main.js"></script>
+    </main>
+</body>
+</html>
