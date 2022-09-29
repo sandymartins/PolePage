@@ -1,44 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="#" href="index.html">
-    <title>Contato</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="#" href="index.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/estudio.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" href="insira_aqui_o_caminho" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/30d8957eba.js" crossorigin="anonymous"></script>
+  <title>Contato</title>
 </head>
+
 <body>
-    <main class="contato">
-        <section>
-          <h3 class="margin">Contato</h2>
-          <form>
-            <div class="margin margintop">
-                <label for="nome">Nome:</label>
-                <input id="nome" name="nome" type="text" placeholder="Insira o seu nome completo" onkeyup="validaNome()" required>
-                <div id="txtNome"></div>
-              </div>
-        
-              <div class="margin margintop">
-                <label for="email">E-mail:</label>
-                <input id="email" name="email" type="text" placeholder="Insira o seu e-mail" onkeyup="validaEmail2()" required>
-                <div id="txtEmail"></div>
-              </div>
 
-            
-            
-            <div class="margin margintop">
-              <label for="mensagem">Mensagem:</label>
+  <nav>
+    <div class="logo"><img src="css/assets/logo poleArt.png" alt="Logo poleArt"></div>
+
+    <div class="menu-btn">
+      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+      <li><a href="#" class="active"> Estúdio </a> </li>
+      <li><a href="#"> Planos </a> </li>
+      <li><a href="#"> Produtos </a> </li>
+      <li><a href="contato.html"> Contato </a> </li>
+    </ul>
+
+  </nav>
+
+  <main class="contato">
+    <section>
+      <h3 class="margin">Contato</h2>
+        <form>
+          <div class="margin margintop">
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="Insira o seu nome completo" onkeyup="validaNome()"
+              required>
+            <div id="txtNome"></div>
+          </div>
+
+          <div class="margin margintop">
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" type="text" placeholder="Insira o seu e-mail" onkeyup="validaEmail2()"
+              required>
+            <div id="txtEmail"></div>
+          </div>
+
+
+
+          <div class="margin margintop">
+            <label for="mensagem">Mensagem:</label>
+          </div>
+
+          <div class="margin margintop">
+            <textarea id="mensagem" rows="8" cols="45" placeholder="Deixe sua mensagem"
+              onkeyup="validaMensagem()"></textarea>
+            <div id="txtMsg"></div>
+          </div>
+
+          <button class="margin margintop" type="submit" onclick="enviarForm()">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="text-white text-center text-lg-start" style="background-color: #ae0169;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">POLE ARTE</h5>
+
+            <div class="mt-4">
+              <!-- Facebook -->
+              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+              <!-- Dribbble -->
+              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+              <!-- Twitter -->
+              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+              <!-- Google + -->
+              <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+              <!-- Linkedin -->
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">CONTATOS:</h5>
+
+            <div class="form-outline form-white mb-4">
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px;"></div>
+                <div class="form-notch-middle" style="width: 48.8px;"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
             </div>
 
-            <div class="margin margintop">
-                <textarea id="mensagem" rows="8" cols="45" placeholder="Deixe sua mensagem" onkeyup="validaMensagem()"></textarea>
-                <div id="txtMsg"></div>
-            </div>
-            
-            <button class="margin margintop" type="submit" onclick="enviarForm()">Enviar</button>
-          </form>
-        </section>
-        <script src="main.js"></script>
-    </main>
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Bela Vista,
+                  SP</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">polearte@gmail.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567
+                  88</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Horários</h5>
+
+            <table class="table text-center text-white">
+              <tbody class="font-weight-normal">
+                <tr>
+                  <td>Seg - Qua:</td>
+                  <td>8h - 9h</td>
+                </tr>
+                <tr>
+                  <td>Qui - Sab:</td>
+                  <td>8h - 13h</td>
+                </tr>
+                <tr>
+                  <td>Domingo:</td>
+                  <td>9h - 10h</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+    </footer>
+
+    <script src="main.js"></script>
+  </main>
 </body>
+
 </html>
